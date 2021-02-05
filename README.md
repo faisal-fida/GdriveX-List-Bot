@@ -13,39 +13,15 @@ This project is heavily inspired from @out386 's telegram bot which is written i
 Deploying is pretty much straight forward and is divided into several steps as follows:
 ## Installing requirements
 
-- Clone this repo:
-```
-git clone https://github.com/lzzy12/python-aria-mirror-bot mirror-bot/
-cd mirror-bot
-```
-
-- Install requirements
-For Debian based distros
-```
-sudo apt install python3
-```
-Install Docker by following the [official docker docs](https://docs.docker.com/engine/install/debian/)
-
-
-- For Arch and it's derivatives:
-```
-sudo pacman -S docker python
-```
-
-- Install dependencies for running setup scripts:
-```shell script
-pip3 install -r requirements-cli.txt
-```
-
 ## Setting up config file
 ```
-cp config_sample.env config.env
+Rename "config_sample.env" to "config.env"
 ```
 - Remove the first line saying:
 ```
 _____REMOVE_THIS_LINE_____=True
 ```
-Fill up rest of the fields. Meaning of each fields are discussed below:
+- Then Fill up rest of the fields. Meaning of each fields are discussed below:
 - **BOT_TOKEN** : The telegram bot token that you get from @BotFather
 - **GDRIVE_FOLDER_ID** : This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.
 - **OWNER_ID** : The Telegram user ID (not username) of the owner of the bot
